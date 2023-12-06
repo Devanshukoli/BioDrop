@@ -1,45 +1,45 @@
-# [2.84.0](https://github.com/EddieHubCommunity/BioDrop/compare/v2.83.19...v2.84.0) (2023-11-01)
+## [2.94.1](https://github.com/EddieHubCommunity/BioDrop/compare/v2.94.0...v2.94.1) (2023-12-01)
+
+
+### Bug Fixes
+
+* changelog update ([#9867](https://github.com/EddieHubCommunity/BioDrop/issues/9867)) ([8caa8b0](https://github.com/EddieHubCommunity/BioDrop/commit/8caa8b0cde91666ffc441229b6b6bc674592a863))
+
+
+
+# [2.94.0](https://github.com/EddieHubCommunity/BioDrop/compare/v2.93.2...v2.94.0) (2023-12-01)
 
 
 ### Features
 
-* admin list not enabled proiles ([#9709](https://github.com/EddieHubCommunity/BioDrop/issues/9709)) ([24bf515](https://github.com/EddieHubCommunity/BioDrop/commit/24bf5151222058841067311fa138c60dcd52ef05))
+* re-ordering tags ([#9823](https://github.com/EddieHubCommunity/BioDrop/issues/9823)) ([8e3abe6](https://github.com/EddieHubCommunity/BioDrop/commit/8e3abe6c155661dab66f47310029181023cacf7a))
 
 
 
-## [2.83.19](https://github.com/EddieHubCommunity/BioDrop/compare/v2.83.18...v2.83.19) (2023-11-01)
-
-
-### Bug Fixes
-
-* update dependencies ([#9639](https://github.com/EddieHubCommunity/BioDrop/issues/9639)) ([7518764](https://github.com/EddieHubCommunity/BioDrop/commit/7518764aa41133e8c5c959e7c5551b1a7dc881d9))
-
-
-
-## [2.83.18](https://github.com/EddieHubCommunity/BioDrop/compare/v2.83.17...v2.83.18) (2023-10-31)
+## [2.93.2](https://github.com/EddieHubCommunity/BioDrop/compare/v2.93.1...v2.93.2) (2023-12-01)
 
 
 ### Bug Fixes
 
-* typo in footer ([#9685](https://github.com/EddieHubCommunity/BioDrop/issues/9685)) ([e7541b4](https://github.com/EddieHubCommunity/BioDrop/commit/e7541b4fa61f943cdf0f8e33ba73ec7ac1d6bc1f))
+* docs navbar stays open ([#9827](https://github.com/EddieHubCommunity/BioDrop/issues/9827)) ([5a1e4f2](https://github.com/EddieHubCommunity/BioDrop/commit/5a1e4f250870253432ebbc564edcbebd6d525bce))
 
 
 
-## [2.83.17](https://github.com/EddieHubCommunity/BioDrop/compare/v2.83.16...v2.83.17) (2023-10-31)
-
-
-### Bug Fixes
-
-* double border on input field in icons page ([#9663](https://github.com/EddieHubCommunity/BioDrop/issues/9663)) ([4f88584](https://github.com/EddieHubCommunity/BioDrop/commit/4f88584e72837e7daae9de66d2fe12b2f3fcacf0))
-
-
-
-## [2.83.16](https://github.com/EddieHubCommunity/BioDrop/compare/v2.83.15...v2.83.16) (2023-10-30)
+## [2.93.1](https://github.com/EddieHubCommunity/BioDrop/compare/v2.93.0...v2.93.1) (2023-12-01)
 
 
 ### Bug Fixes
 
-* icon alignment issue in tabs ([#9681](https://github.com/EddieHubCommunity/BioDrop/issues/9681)) ([41a40f9](https://github.com/EddieHubCommunity/BioDrop/commit/41a40f9ad0ff9baeee286bd0a5d68291d983c39c))
+* replace deprecated key code ([#9852](https://github.com/EddieHubCommunity/BioDrop/issues/9852)) ([2194f50](https://github.com/EddieHubCommunity/BioDrop/commit/2194f507a8a802f487e0cba46751b66d68dd71b6))
+
+
+
+# [2.93.0](https://github.com/EddieHubCommunity/BioDrop/compare/v2.92.2...v2.93.0) (2023-12-01)
+
+
+### Features
+
+* show current character length on bio ([#9855](https://github.com/EddieHubCommunity/BioDrop/issues/9855)) ([ae5f8ef](https://github.com/EddieHubCommunity/BioDrop/commit/ae5f8ef6de867a0ec77830410e35f3fa4c0df416))
 
 
 
