@@ -42,7 +42,7 @@ export default function Navbar() {
           onClick={() => setTheme("light")}
           aria-label="Toggle Theme"
         >
-          <SunIcon className="h-5 w-5 text-primary-low hover:text-secondary-low" />
+          <SunIcon className="h-5 w-5 text-primary-low hover:text-secondary-low dark:hover:text-tertiary-medium" />
         </button>
       );
     }
@@ -100,7 +100,7 @@ export default function Navbar() {
       {!session && (
         <>
           <NavLink
-            item={{ name: "Login", url: "/login" }}
+            item={{ name: "Login", url: "/auth/signin" }}
             setIsOpen={setIsOpen}
             onClick={(e) => {
               e.preventDefault();
@@ -154,7 +154,7 @@ export default function Navbar() {
                   <LogoWide onClick={() => setIsOpen(false)} width={128} />
                 </Link>
               </div>
-              <div className="hidden md:block">
+              <div className="hidden lg:block">
                 <ul className="ml-10 flex items-baseline space-x-4">
                   {primary.map((item) => (
                     <li key={item.name}>
@@ -168,7 +168,7 @@ export default function Navbar() {
                 </ul>
               </div>
             </div>
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <div className="flex items-center gap-3">
                 {renderThemeChanger()}
                 <Link
@@ -179,7 +179,7 @@ export default function Navbar() {
                 >
                   <div className="relative p-2">
                     <FaGithub
-                      className="text-primary-low hover:text-secondary-low"
+                      className="text-primary-low hover:text-secondary-low dark:hover:text-tertiary-medium"
                       aria-label="GitHub"
                     />
                   </div>
@@ -187,7 +187,7 @@ export default function Navbar() {
                 {authControls()}
               </div>
             </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className="-mr-2 flex lg:hidden">
               <button
                 onClick={() => setIsOpen(isOpen ? false : true)}
                 type="button"

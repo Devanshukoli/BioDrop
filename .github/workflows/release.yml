@@ -16,7 +16,7 @@ jobs:
 
     steps:
       # check out the repository with all releases
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -59,7 +59,7 @@ jobs:
       - name: merge PR with release info
         if: steps.changelog.outputs.skipped == 'false'
         id: merge-pr
-        run: gh pr merge --admin --merge --subject 'Merge release info' --delete-branch
+        run: gh pr merge --admin --merge --subject 'Merge release info'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

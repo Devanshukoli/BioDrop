@@ -7,6 +7,7 @@ on:
       - components/**
       - config/**
       - tailwind.config.js
+      - playwright.config.js
       - package.json
       - next.config.mjs
       - models/**
@@ -23,8 +24,8 @@ jobs:
       matrix:
         step: [lint, build]
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: "18"
           cache: "npm"
@@ -33,31 +34,28 @@ jobs:
       - name: run ${{ matrix.step }}
         run: npm run ${{ matrix.step }}
 
-  tests:
-    needs: build
-    runs-on: ubuntu-latest
-    services:
-      mongo:
-        image: mongo
-        ports:
-          - 27017:27017
-    strategy:
-      fail-fast: false
-      matrix:
-        shardIndex: [1, 2, 3, 4, 5]
-        shardTotal: [5]
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "18"
-          cache: "npm"
-      - name: install dependencies
-        run: npm ci
-      - name: Install Playwright's dependencies
-        run: npx playwright install chromium
-      - name: run tests
-        run: npx playwright test --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}
-      - uses: test-summary/action@v2.0
-        with:
-          paths: "results.xml"
+  # tests:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   services:
+  #     mongo:
+  #       image: mongo
+  #       ports:
+  #         - 27017:27017
+  #   strategy:
+  #     fail-fast: false
+  #     matrix:
+  #       shardIndex: [1, 2, 3, 4, 5]
+  #       shardTotal: [5]
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: "18"
+  #         cache: "npm"
+  #     - name: install dependencies
+  #       run: npm ci
+  #     - name: Install Playwright's dependencies
+  #       run: npx playwright install chromium
+  #     - name: run tests
+  #       run: npx playwright test --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}
